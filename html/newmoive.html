@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3023-PS21003</title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- use css and js-->
+    <link rel="stylesheet" href="../css/newmoive.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../js/app.js">
+</head>
+
+<body>
+    <!-- nav-->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="./index.html" class="logo">
+                    <img src="../img/netflix-icon.png" alt="">
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="./index.html">TRANG CHỦ</a></li>
+                    <li><a href="./newmoive.html">PHIM MỚI</a></li>
+                    <li><a href="./Contact.html">LIÊN HỆ</a></li>
+                    <li><a href="./About.html">GIỚI THIỆU</a></li>
+                    <section>
+                        <div class="search">
+                            <input type="text" placeholder="Tìm kiếm">
+                            <!-- search icons -->
+                            <i class='bx bx-search-alt-2'></i>
+                        </div>
+                    </section>
+
+                    <section>
+                        <a href="./Sign in .html" class="btn btn-hover"> <span>ĐĂNG NHẬP</span></a>
+                    </section>
+                </ul>
+
+                <div class="nav_login-btn">
+                    <a href="./Sign in .html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#c19008"d="M416 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c17.67 0 32 14.33 32 32v256c0 17.67-14.33 32-32 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c53.02 0 96-42.98 96-96V128C512 74.98 469 32 416 32zM342.6 233.4l-128-128c-12.51-12.51-32.76-12.49-45.25 0c-12.5 12.5-12.5 32.75 0 45.25L242.8 224H32C14.31 224 0 238.3 0 256s14.31 32 32 32h210.8l-73.38 73.38c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0l128-128C355.1 266.1 355.1 245.9 342.6 233.4z"/></svg>
+                    </a>
+                </div>
+                
+                <label for="nav_mobile-input" class="nav_bars-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path fill="#f9ab00" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                    </svg>
+                </label>
+            </div>
+            <input type="checkbox" hidden name="" id="nav_mobile-input" class="nav_input">
+            <label for="nav_mobile-input" class="nav_overplay"></label>
+
+            <div class="nav_mobile">
+                <div class="nav_mobile-logo">
+                    <a href="#">
+                        <img src="../img/netflix-icon.png" alt="">
+                    </a>
+                </div>
+               
+                <label for="nav_mobile-input" class="nav_mobile-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                            fill="red" />
+                    </svg>
+                </label>
+                <ul class="nav_mobile-menu" id="nav_mobile-menu">
+                    <a class="nav_mobile-list" href="./index.html">TRANG CHỦ</a>
+                    <a class="nav_mobile-list" href="./newmoive.html">PHIM MỚI</a>
+                    <a class="nav_mobile-list" href="./Contact.html">LIÊN HỆ</a>
+                    <a class="nav_mobile-list" href="./About.html">GIỚI THIỆU</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end-->
+     <!-- banner section-->
+     <div class="section">
+        <div class="hero-slide-item">
+            <img src="../img/stretched-1920-1080-692747.png " alt="">
+            <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                    <div class="item-content-title">
+                        Haikyu!!
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                    <div class="item-content-description">
+                        Hinata Shouyou - anh main, sau khi xem xong 1 trận bóng chuyền nọ, đã thần tượng và mơ ước trở
+                        thành "Người khổng lồ tí hon", và gia nhập đội bóng chuyền của trường trung học
+                    </div>
+                    <div class="item-action">
+                        <a href="./moive.html" class="btn btn-hover">
+                            <i class="bx bxs-right-arrow"></i>
+                            <span>Xem ngay</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SPECIAL MOVIE SECTION -->
+
+    <!--SCRIPT-->
+    <!-- JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- OWL CAROUSEL-->
+    <script src="app.js"></script>
+
+    <!-- lasted-->
+    <!-- Mới cập nhật -->
+    <section id="latest">
+        <!-- đoạn văn -->
+        <div class="latest-heading">
+            <H1><a href="anime.html"></a>Mới cập nhật</H1>
+        </div>
+
+        <div class="post-container">
+            <!--post-box-1------------>
+            <div class="post-box">
+                <!--img-->
+                <div class="post-img">
+
+                    <img src="http://jillyacademy.com/images/anime/covers/akebi-chan-no-sailor-fuku-16520.jpg" alt="">
+
+                </div>
+                <div class="main-slider-text">
+                    <!--quality----->
+                    <span class="quality">Tập 2</span>
+                    <!--bottom-text-->
+                    <div class="bottom-text">
+                        <!--name----->
+                        <div class="movie-name">
+                            <span>2022</span>
+                            <a href="./moive.html">Akebi-chan no Sailor-fuku</a>
+                        </div>
+                        <!--Category-and-rating---->
+                        <div class="category-rating">
+                            <!--category-->
+                            <div class="category">
+                                <a href="#">Học đường</a>,<a href="#">Đời thường</a>
+                            </div>
+                            <!--rating--->
+                            <div class="rating">
+                                10.0 <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <!--img-->
+                <div class="post-img">
+                    <img src="https://animeweb.xyz/wp-content/uploads/2022/01/arifureta-shokugyou-de-sekai-saikyou-ss2.jpg"
+                        alt="">
+                </div>
+                <div class="main-slider-text">
+                    <!--quality----->
+                    <span class="quality">Tập 2</span>
+                    <!--bottom-text-->
+                    <div class="bottom-text">
+                        <!--name----->
+                        <div class="movie-name">
+                            <span>2022</span>
+                            <a href="./moive.html"">Arifureta Shokugyou de Sekai Saikyou ss2</a>
+                        </div>
+                        <!--Category-and-rating---->
+                        <div class="category-rating">
+                            <!--category-->
+                            <div class="category">
+                                <a href="#">Hành động</a>,<a href="#">Isekai</a>,<a href="#">Phiêu lưu</a>
+                            </div>
+                            <!--rating--->
+                            <div class="rating">
+                                10.0 <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <!--img-->
+                <div class="post-img">
+                    <img src="https://external-preview.redd.it/i5RmDyaxT0ec2shkAHBLOkaJLdq4rFaaTo8Q2xTmJ_Y.jpg?auto=webp&s=23402972c5b2eca9a08d531b31d61cbe1fd6ece5"
+                        alt="">
+                </div>
+                <div class="main-slider-text">
+                    <!--quality----->
+                    <span class="quality">Tập 2</span>
+                    <!--bottom-text-->
+                    <div class="bottom-text">
+                        <!--name----->
+                        <div class="movie-name">
+                            <span>2022</span>
+                            <a href="./moive.html">Tensai Ouji no Akaji Kokka Saisei Jutsu</a>
+                        </div>
+                        <!--Category-and-rating---->
+                        <div class="category-rating">
+                            <!--category-->
+                            <div class="category">
+                                <a href="#">Hài hước</a>,<a href="#">Giả tưởng</a>,<a href="#">Chính trị</a>
+                            </div>
+                            <!--rating--->
+                            <div class="rating">
+                                10.0 <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <!--img-->
+                <div class="post-img">
+                    <img src="https://i7.xem-truyen.com/manga/22/22975/fantasy-bishoujo.thumb_500x.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <!--quality----->
+                    <span class="quality">Tập 2</span>
+                    <!--bottom-text-->
+                    <div class="bottom-text">
+                        <!--name----->
+                        <div class="movie-name">
+                            <span>2022</span>
+                            <a href="./moive.html">Fantasy Bishoujo Juniku Ojisan to</a>
+                        </div>
+                        <!--Category-and-rating---->
+                        <div class="category-rating">
+                            <!--category-->
+                            <div class="category">
+                                <a href="#">Hài hước</a>,<a href="#">Giả tưởng</a>,<a href="#">Isekai</a>
+                            </div>
+                            <!--rating--->
+                            <div class="rating">
+                                10.0 <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <!--img-->
+                <div class="post-img">
+                    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/03/12/persona-5-review.jpg?quality=75&width=982&height=726&auto=webp"
+                        alt="">
+                </div>
+                <div class="main-slider-text">
+                    <!--quality----->
+                    <span class="quality">Tập 25</span>
+                    <!--bottom-text-->
+                    <div class="bottom-text">
+                        <!--name----->
+                        <div class="movie-name">
+                            <span>2022</span>
+                            <a href="./moive.html">Persona 5 The Animation</a>
+                        </div>
+                        <!--Category-and-rating---->
+                        <div class="category-rating">
+                            <!--category-->
+                            <div class="category">
+                                <a href="#">Học đường</a>,<a href="#">HHành động</a>,<a href="#">Giả tưởng</a>
+                            </div>
+                            <!--rating--->
+                            <div class="rating">
+                                10.0 <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <!--img-->
+                <div class="post-img">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/554802fe-c63a-43b8-b1ce-903ae6324422/dcgauql-45afc9f3-1ef7-47dd-bb3c-497e761d9e0c.jpg/v1/fill/w_1024,h_576,q_75,strp/persona_3_youtube_banner_by_helryu_dcgauql-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvNTU0ODAyZmUtYzYzYS00M2I4LWIxY2UtOTAzYWU2MzI0NDIyXC9kY2dhdXFsLTQ1YWZjOWYzLTFlZjctNDdkZC1iYjNjLTQ5N2U3NjFkOWUwYy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.bh6y0pHJB3oAto5xfgnFlP9x7twetr0E9ODl4d1K6d8"
+                        alt="">
+                </div>
+                <div class="main-slider-text">
+                    <!--quality----->
+                    <span class="quality">Tập 4</span>
+                    <!--bottom-text-->
+                    <div class="bottom-text">
+                        <!--name----->
+                        <div class="movie-name">
+                            <span>2022</span>
+                            <a href="./moive.html">Persona 3 The Animation</a>
+                        </div>
+                        <!--Category-and-rating---->
+                        <div class="category-rating">
+                            <!--category-->
+                            <div class="category">
+                                <a href="#">Học đường</a>,<a href="#">HHành động</a>,<a href="#">Giả tưởng</a>
+                            </div>
+                            <!--rating--->
+                            <div class="rating">
+                                10.0 <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <!--img-->
+                <div class="post-img">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNzcxYjUwZGYtZTI4NC00ZWQzLWFmNjgtNzk1NDFjOWQ5MDFkXkEyXkFqcGdeQXVyMTA3NTQwNDU4._V1_.jpg"
+                        alt="">
+                </div>
+                <div class="main-slider-text">
+                    <!--quality----->
+                    <span class="quality">Tập 25</span>
+                    <!--bottom-text-->
+                    <div class="bottom-text">
+                        <!--name----->
+                        <div class="movie-name">
+                            <span>2022</span>
+                            <a href="./moive.html">Persona 4 The Animation</a>
+                        </div>
+                        <!--Category-and-rating---->
+                        <div class="category-rating">
+                            <!--category-->
+                            <div class="category">
+                                <a href="#">Học đường</a>,<a href="#">HHành động</a>,<a href="#">Giả tưởng</a>
+                            </div>
+                            <!--rating--->
+                            <div class="rating">
+                                10.0 <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <!--img-->
+                <div class="post-img">
+                    <img src="http://images6.fanpop.com/image/photos/44000000/Koroshi-Ai-anime-44044709-453-640.jpg"
+                        alt="">
+                </div>
+                <div class="main-slider-text">
+                    <!--quality----->
+                    <span class="quality">Tập 2</span>
+                    <!--bottom-text-->
+                    <div class="bottom-text">
+                        <!--name----->
+                        <div class="movie-name">
+                            <span>2022</span>
+                            <a href="./moive.html">Koroshi Ai</a>
+                        </div>
+                        <!--Category-and-rating---->
+                        <div class="category-rating">
+                            <!--category-->
+                            <div class="category">
+                                <a href="#">Hành động</a>,<a href="#">Tình yêu</a>
+                            </div>
+                            <!--rating--->
+                            <div class="rating">
+                                10.0 <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="latest">
+            <!-- đoạn văn -->
+            <div class="latest-heading">
+                <H1><a href="anime.html"></a>Phim dài tập</H1>
+            </div>
+    
+            <div class="post-container">
+                <!--post-box-1------------>
+                <div class="post-box">
+                    <!--img-->
+                    <div class="post-img">
+    
+                        <img src="http://jillyacademy.com/images/anime/covers/akebi-chan-no-sailor-fuku-16520.jpg" alt="">
+    
+                    </div>
+                    <div class="main-slider-text">
+                        <!--quality----->
+                        <span class="quality">Tập 2</span>
+                        <!--bottom-text-->
+                        <div class="bottom-text">
+                            <!--name----->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <a href="./moive.html">Akebi-chan no Sailor-fuku</a>
+                            </div>
+                            <!--Category-and-rating---->
+                            <div class="category-rating">
+                                <!--category-->
+                                <div class="category">
+                                    <a href="#">Học đường</a>,<a href="#">Đời thường</a>
+                                </div>
+                                <!--rating--->
+                                <div class="rating">
+                                    10.0 <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-box">
+                    <!--img-->
+                    <div class="post-img">
+                        <img src="https://animeweb.xyz/wp-content/uploads/2022/01/arifureta-shokugyou-de-sekai-saikyou-ss2.jpg"
+                            alt="">
+                    </div>
+                    <div class="main-slider-text">
+                        <!--quality----->
+                        <span class="quality">Tập 2</span>
+                        <!--bottom-text-->
+                        <div class="bottom-text">
+                            <!--name----->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <a href="./moive.html">Arifureta Shokugyou de Sekai Saikyou ss2</a>
+                            </div>
+                            <!--Category-and-rating---->
+                            <div class="category-rating">
+                                <!--category-->
+                                <div class="category">
+                                    <a href="#">Hành động</a>,<a href="#">Isekai</a>,<a href="#">Phiêu lưu</a>
+                                </div>
+                                <!--rating--->
+                                <div class="rating">
+                                    10.0 <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-box">
+                    <!--img-->
+                    <div class="post-img">
+                        <img src="https://external-preview.redd.it/i5RmDyaxT0ec2shkAHBLOkaJLdq4rFaaTo8Q2xTmJ_Y.jpg?auto=webp&s=23402972c5b2eca9a08d531b31d61cbe1fd6ece5"
+                            alt="">
+                    </div>
+                    <div class="main-slider-text">
+                        <!--quality----->
+                        <span class="quality">Tập 2</span>
+                        <!--bottom-text-->
+                        <div class="bottom-text">
+                            <!--name----->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <a href="./moive.html">Tensai Ouji no Akaji Kokka Saisei Jutsu</a>
+                            </div>
+                            <!--Category-and-rating---->
+                            <div class="category-rating">
+                                <!--category-->
+                                <div class="category">
+                                    <a href="#">Hài hước</a>,<a href="#">Giả tưởng</a>,<a href="#">Chính trị</a>
+                                </div>
+                                <!--rating--->
+                                <div class="rating">
+                                    10.0 <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-box">
+                    <!--img-->
+                    <div class="post-img">
+                        <img src="https://i7.xem-truyen.com/manga/22/22975/fantasy-bishoujo.thumb_500x.jpg" alt="">
+                    </div>
+                    <div class="main-slider-text">
+                        <!--quality----->
+                        <span class="quality">Tập 2</span>
+                        <!--bottom-text-->
+                        <div class="bottom-text">
+                            <!--name----->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <a href="./moive.html">Fantasy Bishoujo Juniku Ojisan to</a>
+                            </div>
+                            <!--Category-and-rating---->
+                            <div class="category-rating">
+                                <!--category-->
+                                <div class="category">
+                                    <a href="#">Hài hước</a>,<a href="#">Giả tưởng</a>,<a href="#">Isekai</a>
+                                </div>
+                                <!--rating--->
+                                <div class="rating">
+                                    10.0 <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-box">
+                    <!--img-->
+                    <div class="post-img">
+                        <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/03/12/persona-5-review.jpg?quality=75&width=982&height=726&auto=webp"
+                            alt="">
+                    </div>
+                    <div class="main-slider-text">
+                        <!--quality----->
+                        <span class="quality">Tập 25</span>
+                        <!--bottom-text-->
+                        <div class="bottom-text">
+                            <!--name----->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <a href="./moive.html">Persona 5 The Animation</a>
+                            </div>
+                            <!--Category-and-rating---->
+                            <div class="category-rating">
+                                <!--category-->
+                                <div class="category">
+                                    <a href="#">Học đường</a>,<a href="#">HHành động</a>,<a href="#">Giả tưởng</a>
+                                </div>
+                                <!--rating--->
+                                <div class="rating">
+                                    10.0 <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-box">
+                    <!--img-->
+                    <div class="post-img">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/554802fe-c63a-43b8-b1ce-903ae6324422/dcgauql-45afc9f3-1ef7-47dd-bb3c-497e761d9e0c.jpg/v1/fill/w_1024,h_576,q_75,strp/persona_3_youtube_banner_by_helryu_dcgauql-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvNTU0ODAyZmUtYzYzYS00M2I4LWIxY2UtOTAzYWU2MzI0NDIyXC9kY2dhdXFsLTQ1YWZjOWYzLTFlZjctNDdkZC1iYjNjLTQ5N2U3NjFkOWUwYy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.bh6y0pHJB3oAto5xfgnFlP9x7twetr0E9ODl4d1K6d8"
+                            alt="">
+                    </div>
+                    <div class="main-slider-text">
+                        <!--quality----->
+                        <span class="quality">Tập 4</span>
+                        <!--bottom-text-->
+                        <div class="bottom-text">
+                            <!--name----->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <a href="./moive.html">Persona 3 The Animation</a>
+                            </div>
+                            <!--Category-and-rating---->
+                            <div class="category-rating">
+                                <!--category-->
+                                <div class="category">
+                                    <a href="#">Học đường</a>,<a href="#">HHành động</a>,<a href="#">Giả tưởng</a>
+                                </div>
+                                <!--rating--->
+                                <div class="rating">
+                                    10.0 <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-box">
+                    <!--img-->
+                    <div class="post-img">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzcxYjUwZGYtZTI4NC00ZWQzLWFmNjgtNzk1NDFjOWQ5MDFkXkEyXkFqcGdeQXVyMTA3NTQwNDU4._V1_.jpg"
+                            alt="">
+                    </div>
+                    <div class="main-slider-text">
+                        <!--quality----->
+                        <span class="quality">Tập 25</span>
+                        <!--bottom-text-->
+                        <div class="bottom-text">
+                            <!--name----->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <a href="./moive.html">Persona 4 The Animation</a>
+                            </div>
+                            <!--Category-and-rating---->
+                            <div class="category-rating">
+                                <!--category-->
+                                <div class="category">
+                                    <a href="#">Học đường</a>,<a href="#">HHành động</a>,<a href="#">Giả tưởng</a>
+                                </div>
+                                <!--rating--->
+                                <div class="rating">
+                                    10.0 <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-box">
+                    <!--img-->
+                    <div class="post-img">
+                        <img src="http://images6.fanpop.com/image/photos/44000000/Koroshi-Ai-anime-44044709-453-640.jpg"
+                            alt="">
+                    </div>
+                    <div class="main-slider-text">
+                        <!--quality----->
+                        <span class="quality">Tập 2</span>
+                        <!--bottom-text-->
+                        <div class="bottom-text">
+                            <!--name----->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <a href="./moive.html">Koroshi Ai</a>
+                            </div>
+                            <!--Category-and-rating---->
+                            <div class="category-rating">
+                                <!--category-->
+                                <div class="category">
+                                    <a href="#">Hành động</a>,<a href="#">Tình yêu</a>
+                                </div>
+                                <!--rating--->
+                                <div class="rating">
+                                    10.0 <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- FOOTER SECTION -->
+<footer class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-6 col-sm-12">
+                <div class="content">
+                    <a href="#" class="logo">
+                        <img src="/anime img/netflix-icon.png" alt="">
+                    </a>
+                    <p>
+                        © Được phát triển bởi <a href="" class="name">Đặng Dương Hoàng John</a>
+                    </p>
+                    <div class="social-list">
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-6 col-sm-12">
+                <div class="row1">
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Netflix</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">Chúng tôi</a></li>
+                                <li><a href="#">Tài khoản</a></li>
+                                <li><a href="#">Thanh toán</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Trangh chủ</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">Chúng tôi</a></li>
+                                <li><a href="#">Tài khoản</a></li>
+                                <li><a href="#">Thanh toán</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Hỗ trợ</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">Chúng tôi</a></li>
+                                <li><a href="#">Tài khoản</a></li>
+                                <li><a href="#">Thanh toán</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER SECTION -->
+</body>
+
+</html>
